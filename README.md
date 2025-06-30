@@ -1,12 +1,55 @@
-# React + Vite
+# Fast React Pizza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a pizza ordering application built with React, Redux, and React Router. It allows users to browse a menu, add pizzas to a cart, and place an order.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Browse Menu:** Users can view a list of available pizzas with their ingredients and prices.
+- **Add to Cart:** Users can add pizzas to their shopping cart.
+- **Update Cart:** Users can increase or decrease the quantity of pizzas in their cart or remove them entirely.
+- **Place Order:** Users can place an order by providing their name, phone number, and address.
+- **Priority Orders:** Users can mark their orders as a priority for an additional fee.
+- **Order Tracking:** Users can view the status of their order and an estimated delivery time.
+- **Geolocation:** The application can use the user's geolocation to pre-fill the address form.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React:** A JavaScript library for building user interfaces.
+- **Redux:** A predictable state container for JavaScript apps.
+- **React Router:** A routing library for React.
+- **Tailwind CSS:** A utility-first CSS framework.
+- **Vite:** A fast build tool for modern web projects.
+
+## Project Structure
+
+The project is structured into the following directories:
+
+- **`src/features`:** Contains the core features of the application, such as `cart`, `menu`, `order`, and `user`.
+- **`src/services`:** Contains the API services for interacting with the backend.
+- **`src/ui`:** Contains the UI components used throughout the application.
+- **`src/utils`:** Contains utility functions.
+
+## Getting Started
+
+To get started with the project, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/your-username/fast-react-pizza.git
+cd fast-react-pizza
+npm install
+```
+
+Then, you can start the development server:
+
+```bash
+npm run dev
+```
+
+This will start the development server at `http://localhost:5173`.
+
+## Scripts
+
+- **`npm run dev`:** Starts the development server.
+- **`npm run build`:** Builds the application for production.
+- **`npm run lint`:** Lints the code using ESLint.
+- **`npm run preview`:** Starts a local server to preview the production build.
